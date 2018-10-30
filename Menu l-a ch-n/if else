@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int luachon;
+	int a,b;
+	cout<<"\nnhap a: ";
+	cin>>a;
+	cout<<"\nhap b: ";
+	cin>>b;
+	while(1)
+	{
+		cout<<"\n\n\t\t TINH TOAN: ";
+		cout<<"\n1. tinh tong a+b: ";
+		cout<<"\n2. tinh hieu: a+b  ";
+		cout<<"\n3. tinh nhan: a+b ";
+		cout<<"\n4. tinh thuong: a+b ";
+		cout<<"\n0. end: ";
+		
+		cout<<"\nnhap lua chon: ";
+		cin>>luachon;
+		if(luachon!=1&&luachon!=2&&luachon!=3&&luachon!=4)
+		{
+			cout<<"\nkhong hop le: ";
+			
+		}
+		else if(luachon==1)
+		{
+			cout<<"\ntong: "<<a+b;
+		}
+		else if(luachon==2)
+		{
+			cout<<"\nhieu: "<<a-b;
+		}
+		else if(luachon==3)
+		{
+			cout<<"\nnhan: "<<a*b;
+		}
+		else if(luachon==4)
+		{
+			cout<<"\nthuong: "<<a/b;
+		}
+		else
+		{
+			break;
+		}
+	}
+	return 0;
+}
+		
